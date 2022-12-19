@@ -4,5 +4,7 @@ services:
     build: .
     volumes:
       - .:/user/app/src
+    image: ntantai21810/wnc
     ports:
-      - '8080:80'
+      - '80:80'
+      - '443:443'

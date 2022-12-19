@@ -8,4 +8,5 @@ RUN yarn build
 FROM nginx
 COPY --from=build /usr/app/src/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /usr/app/src/dist /usr/share/nginx/html
+EXPOSE 80 443
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
