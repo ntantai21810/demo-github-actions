@@ -34,6 +34,9 @@ jobs:
       - name: Verify
         run: echo ${{ steps.docker_build.outputs.digest }}
 
+      - name: Verify ssh key
+        run: echo ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: SSH deploy
         uses: appleboy/ssh-action@master
         with:
