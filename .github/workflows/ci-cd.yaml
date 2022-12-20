@@ -42,4 +42,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            wget https://github.com/ntantai21810/demo-github-actions/blob/master/.github/workflows/ci-cd.yaml & ./deploy.sh
+            wget https://github.com/ntantai21810/demo-github-actions/blob/master/deploy.sh & ./deploy.sh
