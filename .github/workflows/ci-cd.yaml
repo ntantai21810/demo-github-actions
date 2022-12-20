@@ -42,4 +42,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            rm -rf deploy.sh & wget https://github.com/ntantai21810/demo-github-actions/blob/master/deploy.sh & echo TanTai21082001 | sudo -S ./deploy.sh
+            rm -rf deploy.sh & wget https://github.com/ntantai21810/demo-github-actions/blob/master/deploy.sh & echo TanTai12345678@ | sudo -S ./deploy.sh
