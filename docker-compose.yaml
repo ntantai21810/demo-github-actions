@@ -9,11 +9,12 @@ services:
     image: nginx:alpine
     expose:
       - 80
+      - 443
     ports:
       - 80:80
       - 443:443
     entrypoint: ['nginx', '-g', 'daemon off;']
     volumes:
-      - .nginx:/etc/nginx/nginx.conf
+      - .nginx:/etc/nginx
     depends_on:
       - wnc-fe
