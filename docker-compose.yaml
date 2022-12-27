@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - .:/user/app/src
-      - .nginx:/user/app/demo
+      - .nginx/nginx.conf:/user/app/demo
     image: ntantai21810/wnc
   nginx:
     image: nginx:alpine
