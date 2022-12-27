@@ -15,6 +15,6 @@ services:
       - 443:443
     entrypoint: ['nginx', '-g', 'daemon off;']
     volumes:
-      - .nginx:/etc/nginx
+      - /.nginx:/etc/nginx
     depends_on:
       - wnc-fe
